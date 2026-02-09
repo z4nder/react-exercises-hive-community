@@ -24,7 +24,9 @@ app/
 └── exercicios/
     ├── basico/[1-10]/page.tsx
     ├── condicional/[1-10]/page.tsx
-    └── repeticao/[1-10]/page.tsx
+    ├── repeticao/[1-10]/page.tsx
+    ├── react/[1-10]/page.tsx
+    └── typescript/[1-10]/page.tsx
 ```
 
 ## Dados dos Exercícios
@@ -40,7 +42,7 @@ interface Exercicio {
 }
 
 interface Categoria {
-  id: string;        // "basico" | "condicional" | "repeticao"
+  id: string;        // "basico" | "condicional" | "repeticao" | "react" | "typescript"
   nome: string;
   emoji: string;
   cor: string;       // Classes Tailwind de gradiente
@@ -48,13 +50,15 @@ interface Categoria {
 }
 ```
 
-### Categorias
+### Categorias (50 exercícios no total)
 
-| ID | Nome | Cor | Qtd |
-|----|------|-----|-----|
-| basico | Básico | emerald/teal | 10 |
-| condicional | Condicional | violet/purple | 10 |
-| repeticao | Repetição | orange/red | 10 |
+| ID | Nome | Emoji | Cor | Qtd |
+|----|------|-------|-----|-----|
+| basico | Básico | 1️⃣ | emerald/teal | 10 |
+| condicional | Condicional | 2️⃣ | violet/purple | 10 |
+| repeticao | Repetição | 3️⃣ | orange/red | 10 |
+| react | React | ⚛️ | cyan/blue | 10 |
+| typescript | TypeScript | 🔷 | blue/indigo | 10 |
 
 ## Helpers Disponíveis
 

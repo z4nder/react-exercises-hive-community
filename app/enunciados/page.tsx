@@ -32,7 +32,7 @@ export default function Enunciados() {
             Lista de Enunciados
           </h1>
           <p className="mt-2 text-slate-400">
-            30 exercícios para você criar e resolver
+            50 exercícios para você criar e resolver
           </p>
         </div>
       </header>

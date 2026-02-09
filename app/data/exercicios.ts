@@ -199,6 +199,134 @@ export const categorias: Categoria[] = [
       },
     ],
   },
+  {
+    id: "react",
+    nome: "React",
+    emoji: "⚛️",
+    cor: "from-cyan-500 to-blue-600",
+    exercicios: [
+      {
+        id: 1,
+        titulo: "Contador Simples",
+        descricao: "Crie um contador com botões para incrementar e decrementar o valor. O valor não pode ser menor que zero.",
+        dica: "Use useState para armazenar o valor do contador.",
+      },
+      {
+        id: 2,
+        titulo: "Toggle de Visibilidade",
+        descricao: "Crie um botão que alterna a visibilidade de um parágrafo. Quando visível, o botão deve mostrar 'Esconder'. Quando oculto, deve mostrar 'Mostrar'.",
+      },
+      {
+        id: 3,
+        titulo: "Lista de Tarefas",
+        descricao: "Crie uma lista de tarefas (todo list) onde o usuário pode adicionar novas tarefas e marcar como concluídas.",
+        dica: "Use um array de objetos com { id, texto, concluida }.",
+      },
+      {
+        id: 4,
+        titulo: "Formulário Controlado",
+        descricao: "Crie um formulário com campos nome, email e mensagem. Mostre uma prévia em tempo real do que está sendo digitado.",
+      },
+      {
+        id: 5,
+        titulo: "Filtro de Lista",
+        descricao: "Dada uma lista de frutas, crie um campo de busca que filtra a lista em tempo real conforme o usuário digita.",
+        dica: "Use filter() combinado com includes() para filtrar.",
+      },
+      {
+        id: 6,
+        titulo: "Tabs/Abas",
+        descricao: "Crie um componente de abas com 3 seções diferentes. Ao clicar em uma aba, deve mostrar apenas o conteúdo correspondente.",
+      },
+      {
+        id: 7,
+        titulo: "Timer/Cronômetro",
+        descricao: "Crie um cronômetro com botões Iniciar, Pausar e Resetar. Mostre o tempo em formato MM:SS.",
+        dica: "Use useEffect com setInterval para atualizar o tempo.",
+      },
+      {
+        id: 8,
+        titulo: "Carrinho de Compras",
+        descricao: "Crie uma lista de produtos com botão 'Adicionar ao carrinho'. Mostre o total de itens e o valor total do carrinho.",
+      },
+      {
+        id: 9,
+        titulo: "Accordion/Sanfona",
+        descricao: "Crie um componente accordion com 3 perguntas frequentes. Ao clicar em uma pergunta, expande a resposta e fecha as outras.",
+      },
+      {
+        id: 10,
+        titulo: "Galeria de Imagens",
+        descricao: "Crie uma galeria com miniaturas. Ao clicar em uma miniatura, a imagem principal deve mudar. Adicione navegação anterior/próximo.",
+      },
+    ],
+  },
+  {
+    id: "typescript",
+    nome: "TypeScript",
+    emoji: "🔷",
+    cor: "from-blue-500 to-indigo-600",
+    exercicios: [
+      {
+        id: 1,
+        titulo: "Tipagem de Variáveis",
+        descricao: "Crie variáveis tipadas para: nome (string), idade (number), ativo (boolean), e hobbies (array de strings). Mostre cada valor na tela.",
+      },
+      {
+        id: 2,
+        titulo: "Interface de Usuário",
+        descricao: "Crie uma interface Usuario com nome, email e idade (opcional). Crie um formulário que recebe esses dados e exibe um card com as informações.",
+        dica: "Propriedades opcionais usam '?' - exemplo: idade?: number",
+      },
+      {
+        id: 3,
+        titulo: "Union Types",
+        descricao: "Crie um componente que recebe uma prop 'status' que só pode ser 'pendente', 'aprovado' ou 'rejeitado'. Mostre cores diferentes para cada status.",
+        dica: "Use union types: type Status = 'pendente' | 'aprovado' | 'rejeitado'",
+      },
+      {
+        id: 4,
+        titulo: "Função Genérica",
+        descricao: "Crie uma função genérica 'primeiro<T>' que recebe um array de qualquer tipo e retorna o primeiro elemento. Teste com números e strings.",
+        dica: "Sintaxe: function primeiro<T>(arr: T[]): T | undefined",
+      },
+      {
+        id: 5,
+        titulo: "Props Tipadas",
+        descricao: "Crie um componente Card que recebe props tipadas: titulo (obrigatório), descricao (obrigatório), e imagem (opcional).",
+      },
+      {
+        id: 6,
+        titulo: "Enum de Cores",
+        descricao: "Crie um enum com cores do semáforo (Vermelho, Amarelo, Verde). Crie botões para mudar a cor atual e exiba um círculo com a cor selecionada.",
+        dica: "enum Cor { Vermelho = 'red', Amarelo = 'yellow', Verde = 'green' }",
+      },
+      {
+        id: 7,
+        titulo: "Type Assertion",
+        descricao: "Simule dados vindos de uma API (objeto genérico). Use type assertion para tipar corretamente e exiba os dados formatados.",
+        dica: "Use 'as' para assertion: const user = data as Usuario",
+      },
+      {
+        id: 8,
+        titulo: "Utility Types",
+        descricao: "Dada uma interface Produto com id, nome, preco e descricao, crie um formulário de edição usando Partial<Produto> onde todos campos são opcionais.",
+        dica: "Partial<T> torna todas propriedades opcionais.",
+      },
+      {
+        id: 9,
+        titulo: "Discriminated Unions",
+        descricao: "Crie tipos para diferentes formas geométricas (círculo com raio, retângulo com largura/altura, quadrado com lado). Calcule a área baseado no tipo.",
+        dica: "Use um campo 'tipo' comum para discriminar: { tipo: 'circulo', raio: number }",
+      },
+      {
+        id: 10,
+        titulo: "Type Guards",
+        descricao: "Crie uma função que recebe string | number e retorna o dobro (se número) ou o texto repetido (se string). Use type guard para verificar o tipo.",
+        dica: "Use typeof para verificar: if (typeof valor === 'number')",
+      },
+    ],
+  },
 ];
 
 export function getCategoria(id: string): Categoria | undefined {
