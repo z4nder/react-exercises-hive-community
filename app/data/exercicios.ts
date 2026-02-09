@@ -64,6 +64,18 @@ export const categorias: Categoria[] = [
         descricao: "Receba o ano de nascimento e o ano atual, e calcule a idade em anos, meses, semanas e dias.",
         dica: "Considere 52 semanas e 365 dias por ano.",
       },
+      {
+        id: 9,
+        titulo: "Conversor de Temperatura",
+        descricao: "Receba uma temperatura em Celsius e converta para Fahrenheit.",
+        dica: "Fórmula: F = (C × 9/5) + 32",
+      },
+      {
+        id: 10,
+        titulo: "Média de Três Notas",
+        descricao: "Receba três notas de um aluno, calcule a média aritmética e mostre o resultado.",
+        dica: "Média = (N1 + N2 + N3) / 3",
+      },
     ],
   },
   {
@@ -102,6 +114,27 @@ export const categorias: Categoria[] = [
         titulo: "Calculadora de IMC",
         descricao: "Calcule o IMC (peso / altura²) e classifique: Abaixo de 18,5 = Abaixo do peso; Entre 18,5 e 25 = Peso normal; Entre 25 e 30 = Acima do peso; Acima de 30 = Obeso.",
       },
+      {
+        id: 7,
+        titulo: "Maior de Três",
+        descricao: "Leia três números e informe qual é o maior deles.",
+      },
+      {
+        id: 8,
+        titulo: "Aprovado ou Reprovado",
+        descricao: "Leia a nota de um aluno (0 a 10). Se a nota for maior ou igual a 7, mostre 'Aprovado'. Caso contrário, mostre 'Reprovado'.",
+      },
+      {
+        id: 9,
+        titulo: "Classificação por Idade",
+        descricao: "Leia a idade de uma pessoa e classifique: 0-12 = Criança; 13-17 = Adolescente; 18-59 = Adulto; 60+ = Idoso.",
+      },
+      {
+        id: 10,
+        titulo: "Calculadora Simples",
+        descricao: "Leia dois números e uma operação (+, -, *, /). Execute a operação escolhida e mostre o resultado.",
+        dica: "Use switch ou múltiplos if/else para cada operação.",
+      },
     ],
   },
   {
@@ -130,6 +163,39 @@ export const categorias: Categoria[] = [
         titulo: "Fatorial",
         descricao: "Leia um número digitado pelo usuário e calcule seu fatorial.",
         dica: "Exemplo: 5! = 5 × 4 × 3 × 2 × 1",
+      },
+      {
+        id: 5,
+        titulo: "Tabuada",
+        descricao: "Leia um número e mostre a tabuada completa dele (de 1 a 10).",
+      },
+      {
+        id: 6,
+        titulo: "Contagem Regressiva",
+        descricao: "Leia um número e mostre uma contagem regressiva até zero.",
+      },
+      {
+        id: 7,
+        titulo: "Números Pares",
+        descricao: "Leia dois números (início e fim) e mostre apenas os números pares do intervalo.",
+        dica: "Um número é par quando o resto da divisão por 2 é zero (n % 2 === 0).",
+      },
+      {
+        id: 8,
+        titulo: "Potência",
+        descricao: "Leia a base e o expoente, e calcule a potência usando repetição (sem usar Math.pow).",
+        dica: "Exemplo: 2³ = 2 × 2 × 2 = 8",
+      },
+      {
+        id: 9,
+        titulo: "Fibonacci",
+        descricao: "Leia um número N e mostre os N primeiros termos da sequência de Fibonacci.",
+        dica: "Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13... (cada número é a soma dos dois anteriores)",
+      },
+      {
+        id: 10,
+        titulo: "Média da Turma",
+        descricao: "Leia as notas de 5 alunos e calcule a média da turma. Mostre também quantos ficaram acima da média.",
       },
     ],
   },
